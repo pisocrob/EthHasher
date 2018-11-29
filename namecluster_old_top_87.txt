@@ -1,0 +1,87 @@
+[(u'piggy', 3), (u'bank', 3)]  :  2  /  6 :  0.666666666667
+[(u'token', 2), (u'my', 2)]  :  2  /  4 :  0.5
+[(u'pyramid', 3), (u'the10', 3), (u'eth', 3), (u'send1', 1)]  :  6  /  12 :  0.5
+[(u'dice', 5), (u'simple', 3), (u'ethereum', 2)]  :  3  /  10 :  0.7
+[(u'ponzi', 5), (u'reset', 3), (u'balanced', 2), (u'flight', 1)]  :  7  /  14 :  0.5
+[(u'reset', 4), (u'ponzi', 4), (u'badge', 1), (u'reg', 1)]  :  4  /  10 :  0.6
+[(u'eth', 4), (u'ventures', 3), (u'final', 3), (u'ventures4', 1)]  :  4  /  11 :  0.636363636364
+[(u'me', 3), (u'is', 3), (u'last', 3)]  :  3  /  9 :  0.666666666667
+[(u'presale', 3), (u'waves', 3)]  :  2  /  6 :  0.666666666667
+[(u'shiny', 2), (u'squirrels', 2)]  :  2  /  4 :  0.5
+[(u'pyramid', 2), (u'nano', 2)]  :  2  /  4 :  0.5
+[(u'token', 3), (u'sale', 3)]  :  2  /  6 :  0.666666666667
+[(u'finneys', 2), (u'matching', 2)]  :  2  /  4 :  0.5
+[(u'finneys', 2), (u'matching', 2)]  :  2  /  4 :  0.5
+[(u'chain', 2), (u'block', 2), (u'enterprise', 2)]  :  3  /  6 :  0.5
+[(u'game', 2), (u'registry', 2)]  :  2  /  4 :  0.5
+[(u'crypted', 3), (u'rps', 3)]  :  2  /  6 :  0.666666666667
+[(u'dgx', 2), (u'swap', 2)]  :  2  /  4 :  0.5
+[(u'comm', 4), (u'channel', 4)]  :  2  /  8 :  0.75
+*[(u'ethereumlottery', 2), (u'net', 2), (u'd', 2)]  :  3  /  6 :  0.5
+[(u'bomb', 3), (u'ticking', 3)]  :  2  /  6 :  0.666666666667
+*[(u'ethereumlottery', 3), (u'net', 3), (u'd', 3)]  :  3  /  9 :  0.666666666667
+[(u'dth', 2), (u'pool', 2)]  :  2  /  4 :  0.5
+*[(u'ethereumlottery', 2), (u'net', 2), (u'd', 2)]  :  3  /  6 :  0.5
+[(u'btc', 2), (u'kiss', 2)]  :  2  /  4 :  0.5
+*[(u'ethereumlottery', 3), (u'net', 3), (u'd', 3), (u'instant', 1)]  :  5  /  11 :  0.545454545455
+[(u'ether', 4), (u'delta', 4)]  :  2  /  8 :  0.75
+[(u'fork', 3), (u'on', 3), (u'i', 3), (u'am', 3)]  :  8  /  18 :  0.555555555556
+[(u'recovery', 4), (u'with', 4), (u'tenant', 4), (u'financing', 1)]  :  6  /  15 :  0.6
+[(u'dice', 9)]  :  1  /  9 :  0.888888888889
+[(u'split', 4), (u'safe', 3), (u'replay', 3), (u'single', 1)]  :  5  /  12 :  0.583333333333
+[(u'kingdom', 3), (u'factory', 3)]  :  2  /  6 :  0.666666666667
+[(u'sell', 3), (u'etc', 3), (u'safely', 3)]  :  3  /  9 :  0.666666666667
+[(u'randao', 3)]  :  1  /  3 :  0.666666666667
+[(u'factory', 5), (u'moonraker', 2), (u'midas', 1), (u'skywalker', 1)]  :  5  /  10 :  0.5
+[(u'dao', 28), (u'withdraw', 28)]  :  2  /  56 :  0.964285714286
+[(u'dice', 6)]  :  1  /  6 :  0.833333333333
+[(u'dao', 27), (u'withdraw', 27), (u'refund', 1), (u'rng', 1)]  :  8  /  60 :  0.866666666667
+[(u'transfer', 3), (u'ether', 3)]  :  2  /  6 :  0.666666666667
+[(u'transfer', 3), (u'ether', 3), (u'replay', 1), (u'protection', 1)]  :  4  /  8 :  0.5
+[(u'kuna', 2), (u'shares', 2)]  :  2  /  4 :  0.5
+[(u'draw', 6), (u'dao', 6), (u'child', 6), (u'with', 6)]  :  21  /  43 :  0.511627906977
+[(u'splitter', 3), (u'eth', 3), (u'etc', 3)]  :  3  /  9 :  0.666666666667
+[(u'1', 2), (u'flagger', 2), (u'00', 2), (u'ark', 2)]  :  4  /  8 :  0.5
+[(u'og', 2), (u'trogl', 2), (u'1', 2), (u'ark', 2)]  :  5  /  10 :  0.5
+[(u'ark', 3)]  :  1  /  3 :  0.666666666667
+[(u'splitter', 3), (u'etc', 3), (u'eth', 3), (u'authorize', 1)]  :  6  /  12 :  0.5
+[(u'gsi', 4)]  :  1  /  4 :  0.75
+[(u'chainy', 3)]  :  1  /  3 :  0.666666666667
+[(u'holder', 3), (u'deposit', 3)]  :  2  /  6 :  0.666666666667
+[(u'safe', 4), (u'replay', 4), (u'split', 4), (u'demo', 1)]  :  6  /  15 :  0.6
+[(u'escrow', 4), (u'store', 1)]  :  2  /  5 :  0.6
+[(u'token', 3), (u'trader', 3), (u'factory', 3)]  :  3  /  9 :  0.666666666667
+[(u'aira', 2), (u'ether', 2), (u'funds', 2)]  :  3  /  6 :  0.5
+[(u'aira', 3), (u'registrar', 3), (u'service', 3)]  :  3  /  9 :  0.666666666667
+[(u'token', 2), (u'arc', 2)]  :  2  /  4 :  0.5
+[(u'blob', 3), (u'store', 3)]  :  2  /  6 :  0.666666666667
+[(u'blob', 3), (u'store', 3), (u'registry', 3)]  :  3  /  9 :  0.666666666667
+[(u'contract', 3), (u'first', 3)]  :  2  /  6 :  0.666666666667
+[(u'golem', 4), (u'token', 4), (u'network', 4)]  :  3  /  12 :  0.75
+[(u'blockmatics', 3), (u'certificate', 3), (u'graduation', 3), (u'names', 1)]  :  5  /  11 :  0.545454545455
+[(u'token', 2), (u'event', 2), (u'lib', 2)]  :  3  /  6 :  0.5
+[(u'ether', 2), (u'delta', 2)]  :  2  /  4 :  0.5
+[(u'token', 2), (u'reg', 2)]  :  2  /  4 :  0.5
+[(u'wallet', 3)]  :  1  /  3 :  0.666666666667
+[(u'edgeless', 3), (u'token', 3)]  :  2  /  6 :  0.666666666667
+[(u'dice', 10)]  :  1  /  10 :  0.9
+[(u'dice', 3)]  :  1  /  3 :  0.666666666667
+[(u'profit', 3), (u'container', 3)]  :  2  /  6 :  0.666666666667
+[(u'store', 3), (u'competition', 3)]  :  2  /  6 :  0.666666666667
+[(u'swarm', 6), (u'redistribution', 6), (u'token', 2), (u'life', 1)]  :  9  /  20 :  0.55
+[(u'token', 6), (u'factory', 6), (u'seller', 6)]  :  3  /  18 :  0.833333333333
+[(u'manager', 2), (u'pass', 2)]  :  2  /  4 :  0.5
+[(u'dice', 8), (u'ads', 1), (u'ether', 1)]  :  3  /  10 :  0.7
+[(u'token', 3), (u'testing', 3)]  :  2  /  6 :  0.666666666667
+[(u'token', 7), (u'me', 6), (u'mini', 6), (u'factory', 3)]  :  16  /  37 :  0.567567567568
+[(u'dst', 4), (u'contract', 4)]  :  2  /  8 :  0.75
+[(u'token', 3), (u'testing', 3), (u'foundry', 1), (u'escrow', 1)]  :  4  /  8 :  0.5
+[(u'token', 5), (u'testing', 5)]  :  2  /  10 :  0.8
+[(u'presale', 10), (u'noxon', 1), (u'fund', 1)]  :  3  /  12 :  0.75
+[(u'whitelist', 3), (u'exchange', 3)]  :  2  /  6 :  0.666666666667
+[(u'trader', 2), (u'value', 2)]  :  2  /  4 :  0.5
+[(u'token', 3), (u'trader', 3), (u'factory', 3)]  :  3  /  9 :  0.666666666667
+[(u'balance', 4), (u'reader', 4), (u'token', 1), (u'testing', 1)]  :  4  /  10 :  0.6
+[(u'manager', 3), (u'pass', 3)]  :  2  /  6 :  0.666666666667
+[(u'presale', 17)]  :  1  /  17 :  0.941176470588
+[(u'viure', 6), (u'sale', 6), (u'token', 6), (u'founders', 6)]  :  10  /  32 :  0.6875

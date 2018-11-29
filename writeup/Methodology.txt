@@ -1,0 +1,23 @@
+Our first step is creating clusters using the mean of distance measurements between ssdeep hashes of each contract's bytecode.
+
+Labelling:
+
+The labelling words were acquired by an automated process of taking contract names from the source code section of the page for each contract on etherscan.io. The names were taken from the source code section as it was discovered the 'Contract Name' tag above is sometimes left blank.
+
+The names were then tokenized, which included accounting for various naming conventions such as CamelCase and snake_case. The resulting name words for each cluster were recorded. The 4 most common words for each cluster were used as label words to describe it. 4 words were chosen in order to provide a good description of a cluster's purpose whilst reducing naming overlap between clusters.
+
+A frequency distribution score was given to each cluster. The score was calculated by: 1 - a/b. Where a= the number of unique words and b = total number of words. This gives a score between 0 and 1 where closer to one indicates a more homogeneous cluster. This method rests on the axiom that the set of validated contracts used has a high likelihood of being named accuracy and in a way that pertains to the function of the contract.
+
+Hashing & distance measurements:
+
+Contracts were represented by taking a hash of their bytecode using the non-cryptographic ssdeep hash, also known as context triggered piecewise hash (CTPH)~\cite{kornblum2006identifying}. This hash produces hashes that are uniform, but unlike cryptographic hashes, not random. This enables us to compare the similarity of the hashes to ascertain the similarity of the bytecode for contracts.
+
+Similarity has been measured using the mean of three well known distance measures, levenshtein, jaccard and sorenson. The mean was taken in order to mitigate the negative affect of any one distance measure, a method used effectively in~\cite{sung2004static} \cite{namanya2016detection}.
+
+Clustering:
+
+Two different approaches to clustering were employed in our attempt to label contracts, both methods are unsupervised learning due to the lack of any base knowledge of the purpose of contracts outside of manual analysis.
+
+This method was selected because unlike most clustering methods affinity propagations selects the number of clusters itself based on the data provided. A useful feature when dealing with a situation in which no ground truth is available.
+
+The second approach used was k-medoids. This type of clustering behaves in a similar manner to k-means with the difference that it takes a point in the cluster as a medoid (also known as a centoid or exemplar) as oppose to a mean of measurements in the cluster. The value for k number of clusters was decided upon using the elbow method~\cite{kornblum2006identifying} with cluster diameter as a measure of variance. This indicated that the optimal number of clusters for minimising cluster diameter was seven.

@@ -1,0 +1,66 @@
+Experimental results analysis:
+
+The analysis of results found below involves identifying the purpose of a cluster through the use of its associated name words and the presence of a high transaction (TX) volume contract where transaction volume is taken to be internal + external transactions. If a high TX volume contract is present in a cluster we look to see if the cluster labels can account for it.
+
+For K-medoids the medoids (also called exemplars and centoids) for each cluster are looked at in terms of their function and discussed in comparison to the name words for the cluster.
+
+K-medoids 7:
+
+Using cluster diameter as a measure of variance and the elbow method to determine cluster size we determined that the optimal k for reducing diameter was k=7. Four of these contracts had an overall word frequency distribution score of >0.4. The four most common name words are taken to be the label words for the cluster. We carried out manual verification on these clusters be taking the 5 contracts with the highest transaction (TX) volume where volume is taken as external + internal transactions and attempting to ascertain whether the clustering method was able to label them correctly.
+
+All of the top 5 high TX volume contracts are related to the DAO attack, summer 2016 [EthBlogDAOBreach]. The first two, both named 'ReplaySafeSplit', whose purpose is to attempt to mitigate a type of replay attack, where placed in the cluster which has the labels 'presale', 'token', 'dice' and 'factory'. As such it is not immediately obvious that the labels apply to the ReplaySafeSplit contract. We conjecture that The size of this cluster indicates it is grouping together different kinds of contracts.
+
+The third contract is called TheDAO, it was placed in the cluster with the labels 'dao', 'withdraw', 'token' and 'mini'. The contract has been correctly labelled by the cluster. It is worth noting that the label 'withdraw' also holds a strong likelihood of pertaining to TheDAO as well, many withdraw contracts were setup when TheDAO's security breach took place.
+
+The fourth is again named 'ReplaySafeSplit', it's cluster labels are 'dao', 'withdraw', 'token' and 'mini'. It may be the case that the labels 'withdraw' and 'token' pertain to the ReplaySafeSplit contract as it's purpose is to allow currency to be shifted between two chains that occurred as a result of a hard fork.
+
+The fifth and final contract is named 'ManagedAccount', it forms part of the TheDAO. Its contract labels are 'token', 'dice', 'factory' and 'presale'. While neither of the contract's name words appear in the labels the words 'token' and 'factory' are common to the functionality of The DAO as a whole. It appears that the labels help to identify this contract as part of DAO.
+
+K-medoids 7 - Medoids:
+
+0x60b1bfaa999ab532df3ab804b43ed549a8636501 - Presale
+0xc008dcb708c68286d80ae36cba6397ed5bd5c7ee - Contest
+0x56fedaf633393a4902078b95a4de01c6185c5975 - WithdrawDAO
+0xa83c4a6d0418074655bdbe74fed8435c46c19f66 - fairandeasy
+0x7D56485e026D5D3881F778E99969D2b1F90c50aF - ProtectTheCastle
+0x7b9e81ec3591b570aa2c9fbec77f7dda76ac4f6d - Eater
+0x7d3ae940eb73dc9131758ad2e326c7d863b0916a - Doubler
+
+We looked at the medoid of each cluster, in an attempt to define a purpose for contracts in the cluster as well comparing it to the name words as a definition of cluster purpose.
+
+The first cluster's medoid is a contract called 'Presale'. This aligns well with the name words, the most common word for this cluster is 'presale' closely followed by 'token' which is what presales sell. As such it seems that the medoid and the name words correlate to label this cluster as 'presales' contracts.
+
+This second cluster's medoid is called 'Contest', the source code indicates it is a contract designed for voting. The most common name word for this cluster is 'contest' which implies contracts with a similar function are to be found within it. It is worth noting however that this contract has low frequency distribution score of 0.16, meaning that the contracts in this cluster are largely named differently.
+
+The third cluster medoid, named 'WithdrawDAO' is very clearly, as the name suggests, a contract for withdrawal funds from DAO. The name words for this cluster strongly suggest that this cluster contains contracts dealing with DAO withdrawals. The top two name words are 'dao' and 'withdraw', they comprise over half of all the name words for the cluster.
+
+The fourth cluster medoid is named 'fairandeasy' which is a gambling contract. This can be seen in the name words for this cluster to some extent. Although the frequency distribution score for this cluster is only 0.17 three of the four most common words are 'dice' 'pyramid' and 'simple' which are all commonly used words for gambling contracts.
+
+The fifth cluster's medoid is named 'ProtectTheCastle' and appears to be a gambling contract. One of the four most commons name words is 'dice' which suggests that contracts in this cluster are also primarily gambling. However the most common word by a large majority is 'token' which is not a name word that can be as clearly associated with gambling. The fact that one of the top five high TX volume contracts, 'ManagedAccount', is also found in this cluster suggest that it contains contracts that have a number of different purposes. As 'ManagedAccount' is part of DAO and the most common name word is 'token' is suggests the cluster contains both gambling contracts and contracts that deal with DAO.
+
+The sixth cluster is something of a special case, the medoid is called 'Eater' as is a completely empty contract. The cluster contains only one other contract which also has no discernible purpose, containing only three variables and no operations. As such it appears this cluster catches either empty or close to empty contracts with no purpose. No analysis of name words is required due to the low number of contracts.
+
+The final cluster's medoid is called 'Doubler', this appears to be a gambling contract. One of the four most common name words is 'dice' which suggests that this cluster, as well as the fourth and fifth clusters consists, at least in part, of gambling contracts. Moreover, this cluster follows the pattern seen in the fifth cluster of having 'token' as it's most common name word. Again this suggests this cluster contains both gambling contracts and which are involved in the operation of DAO.
+
+Affinity Propagation:
+
+The highest TX volume contract is found in a cluster with the name words 'split', 'safe', 'replay' and 'username'. With the exception of 'username', which only appears once in all 16 name words for this cluster, it is apparent that this cluster contains 'ReplaySafeSplit' contracts, giving this cluster a clear purpose.
+
+The Second 'ReplaySafeSplit' contract appears in a cluster whose three most frequent name words in order of frequency are,  'safe', 'replay', and 'split'. Given the high TX contract presence and the name words being almost exclusively the name words for the high TX contract this seemingly gives this cluster a clear purpose. Curiously however, the third high TX contract 'TheDAO' is also found in this cluster, it was not expected that these contracts would be found the same cluster. The fourth high TX contract is also found in this cluster which is in line with the second high TX contract and the name words as it is also a 'ReplaySafeSplit' contract.
+
+The fifth and final high TX contract 'ManagedAccount' is found in a cluster with the labels 'dice', 'refund', 'ethereumlottery' and 'account'. Not much can be gained from the name words for this cluster, with a frequency distribution score of 0.13 there are almost no repeated words in this cluster, the presence of the words 'lottery' and 'dice' suggest that this cluster contains gambling contracts, however he present of the high TX contract indicates that the cluster also contains contracts with a separate purpose.
+
+K-med medoids in Affinity Propagation clusters:
+
+0x60b1bfaa999ab532df3ab804b43ed549a8636501 - Presale - 135 [(u'presale', 12), (u'yes', 1), (u'no', 1), (u'swt', 1)]  :  5  /  16 :  0.6875
+0xc008dcb708c68286d80ae36cba6397ed5bd5c7ee - Contest - 132 [(u'contest', 4)]  :  1  /  4 :  0.75
+0x56fedaf633393a4902078b95a4de01c6185c5975 - WithdrawDAO - 68 [(u'dao', 26), (u'withdraw', 26), (u'utils', 1), (u'etherization', 1)]  :  4  /  54 :  0.925925925926
+0xa83c4a6d0418074655bdbe74fed8435c46c19f66 - fairandeasy - 15 [(u'fairandeasy', 2), (u'theultimatepyramid', 1), (u'quick2', 1), (u'little', 1)]  :  6  /  7 :  0.142857142857
+0x7D56485e026D5D3881F778E99969D2b1F90c50aF - ProtectTheCastle - 6 [(u'lib', 2), (u'arith', 2), (u'the', 2), (u'protect', 2)]  :  43  /  48 :  0.104166666667 (same medoid)
+0x7b9e81ec3591b570aa2c9fbec77f7dda76ac4f6d - Eater - 71 [(u'eater', 2)]  :  1  /  2 :  0.5 (exact same cluster??)
+0x7d3ae940eb73dc9131758ad2e326c7d863b0916a - Doubler - 57 [(u'tanya', 2), (u'deposit', 2), (u'doubler', 2), (u'redistribution', 2)]  :  39  /  43 :  0.093023255814
+
+
+Conclusion:
+
+From the results it can be seen that using clustering based on bytecode similarity it is possible to identify the purpose of a contract by applying labels to clusters and manual analysis of name words and high TX transactions ascertain the purpose of contracts in a cluster. Although Affinity Propagation resulted in a high number of cluster (142), it was more accurate in grouping contracts with a similar purpose. It produced a number of separate clusters with had the same or similar name words and frequency distribution scores, this indicates that various clusters are identifying contracts with a similar purpose. The labels for these clusters therefore also end up being the same. In the future this could be used to help guide supervised learning methods by grouping contracts from similarity labelled clusters into one category. K-medoids has clustered accurately for its medoids but obfuscates the purpose of high TX contracts. An interesting line for future work would be to look at the relationship between bytecode similarity and contracts grouped by transaction volume between each other. We have offered an insight into the purpose of verified contracts in the Ethereum system and paved the way towards a GUI driven framework for contract labelling in the future.
